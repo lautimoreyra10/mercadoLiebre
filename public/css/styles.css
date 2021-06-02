@@ -1,5 +1,5 @@
 header {
-    background-size: cover;
+    background-size:contain;
     background-color: #fff159;
     margin: -8px;
     font-family: 'Roboto', sans-serif;
@@ -70,7 +70,8 @@ h3 {
 footer{
     text-align: center;
     padding: 20px;
-    border-style:groove;
+    /*border-style:groove;*/
     margin-left: 20px;
     margin-right: 20px;
+    box-shadow: 0 0 10px gray;
 }
