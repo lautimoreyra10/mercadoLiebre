@@ -1,9 +1,11 @@
 header {
-    background-size:contain;
+    background-size:cover;
     background-color: #fff159;
-    margin: -8px;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    width: fit-content;
+    box-sizing: content-box;
+
 }
 h3 {
     font-family: 'Roboto', sans-serif;
@@ -75,3 +77,10 @@ footer{
     margin-right: 20px;
     box-shadow: 0 0 10px gray;
 }
+/*
+@media (min-width: 720px){
+    header{
+        background-size:auto;
+    }
+}
+*/
