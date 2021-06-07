@@ -3,10 +3,12 @@ header {
     background-color: #fff159;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    width: fit-content;
-    box-sizing: content-box;
-
+    box-sizing:border-box;
 }
+li {
+    list-style:none;
+}
+
 h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -26,7 +28,7 @@ h3 {
 .burger-menu{
     background-color: #0e61b9;
     color : rgba(255, 255, 255, 0.815);
-    margin: 187px;
+    margin: 492px;
     border-radius: 15%;
     width: 36px;
     height: 14px;
@@ -69,18 +71,24 @@ h3 {
 .footerText3{
     text-align: center;
 }
+.bannerhome{
+    text-align: center;
+}
 footer{
     text-align: center;
     padding: 20px;
-    /*border-style:groove;*/
     margin-left: 20px;
     margin-right: 20px;
     box-shadow: 0 0 10px gray;
 }
+main{
+    text-align: center;
+}
 /*
 @media (min-width: 720px){
-    header{
-        background-size:auto;
+    main{
+        width: 100vw;
+        align-items: center;
     }
 }
 */
