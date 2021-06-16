@@ -97,6 +97,7 @@ main{
     align-content:space-between;
     justify-content: center;
     background-color: #ebebeb;
+    margin-bottom:15px;
 }
 .caja{
     border-top: 1px solid #ebebeb;
@@ -111,6 +112,7 @@ article{
     text-align: center;
     background-color: white;
     width: 460px;
+    border-bottom: 15px solid #ebebeb; 
 }
 .fas.fa-truck{
     color:#39b54a;
