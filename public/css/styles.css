@@ -15,13 +15,22 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
+.container{
+    display:flex;
+    flex-direction: column;
+}
 .price {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    display:flex;
+    flex-direction: column;
+
 }
 .discount {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    display:flex;
+    flex-direction: column;
 }
 
 .burger-menu{
@@ -116,6 +125,22 @@ article{
 }
 .fas.fa-truck{
     color:#39b54a;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.fas.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+
 }
 ul{
    display: none; 
