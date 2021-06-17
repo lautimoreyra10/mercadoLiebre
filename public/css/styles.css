@@ -17,20 +17,35 @@ h3 {
 }
 .container{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 .price {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 20%;
 
 }
 .discount {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    width: 70%;
+}
+.containerPriceDiscount{
+    width:430px;
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content:left;
 }
 
 .burger-menu{
@@ -112,8 +127,8 @@ main{
     border-top: 1px solid #ebebeb;
     text-align: left;
     margin:15px;
-    
 }
+
 .divBurger{
     text-align: center;
 }
@@ -139,9 +154,12 @@ article{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
+    left:400px;
+    bottom: -15px;
 
 }
+
 ul{
    display: none; 
 }
@@ -160,6 +178,7 @@ ul{
         display:none;
     }
     .description {
+        color:#666;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
     }
@@ -188,6 +207,7 @@ ul{
         display:none;
     }
     .description {
+        color:#666;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
     }
