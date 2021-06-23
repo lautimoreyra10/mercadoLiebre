@@ -98,7 +98,7 @@ h3 {
     margin:0;
 }
 .bannerimg{
-    width: 100vw;
+    width: 100%;
 
 }
 footer{
@@ -113,13 +113,12 @@ body{
     margin-left: 0px;
     margin-right: 0px;
 }
-main{
+.containerArticles{
     display:flex;
-    width: 100vw;
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
     align-content:space-between;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #ebebeb;
     margin-bottom:15px;
 }
@@ -167,6 +166,7 @@ ul{
     color:#39b54a;
 }
 @media (min-width:1024px) {
+
     header{
         box-sizing:content-box;
         background-color: #fff159;
@@ -174,7 +174,7 @@ ul{
         font-size: 12px;
         width: 100vw;
         }
-    .burger-menu{
+    .fas-fa-bars{
         display:none;
     }
     .description {
@@ -195,15 +195,18 @@ ul{
 }
 
 @media (min-width:768px) {
+    .containerArticles article{
+        width:20%;
+    }
     header{
     box-sizing: content-box;
-    height: 40vh;
+    height: 40%;
     background-color: #fff159;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    width: 100vw;
+    width: 100%;
     }
-    .burger-menu{
+    .fas-fa-bars{
         display:none;
     }
     .description {
@@ -226,7 +229,7 @@ ul{
         background-color: #fff159;
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
-        width: 100vw;
+        width: 100%;
         }
     article{
         box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
