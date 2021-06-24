@@ -1,3 +1,6 @@
+.mainBody{
+    background-color: #ebebeb;
+}
 header {
     background-size:contain;
     background-color: #fff159;
@@ -46,6 +49,12 @@ h3 {
     align-items:center;
     flex-direction: row;
     justify-content:left;
+}
+.titleArticles{
+    color: #666;
+}
+.titleArticles2{
+    color: #666;
 }
 
 .burger-menu{
@@ -98,8 +107,7 @@ h3 {
     margin:0;
 }
 .bannerimg{
-    width: 100%;
-
+    width: 100vw;
 }
 footer{
     text-align: center;
@@ -108,12 +116,19 @@ footer{
     margin-right: 20px;
     box-shadow: 0 0 10px gray;
 }
-body{
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+.mainBody{
+    margin: 0px;
 }
 .containerArticles{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    align-content:space-between;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    margin-bottom:15px;
+}
+.containerArticles2{
     display:flex;
     flex-direction:row;
     align-items:center;
@@ -131,11 +146,22 @@ body{
 .divBurger{
     text-align: center;
 }
-article{
+.articulo{
     text-align: center;
     background-color: white;
     width: 460px;
-    border-bottom: 15px solid #ebebeb; 
+    border-bottom: 15px solid #ebebeb;
+    flex-wrap: nowrap;
+    box-shadow: 0 0 10px gray;
+}
+.articuloOferta{
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+    background-color: white;
+    width: 460px;
+    border-bottom: 15px solid #ebebeb;
+    flex-wrap: nowrap;
+    margin-right: 15px;
 }
 .fas.fa-truck{
     color:#39b54a;
@@ -158,7 +184,9 @@ article{
     bottom: -15px;
 
 }
-
+footer{
+    background-color: white;
+}
 ul{
    display: none; 
 }
@@ -166,14 +194,47 @@ ul{
     color:#39b54a;
 }
 @media (min-width:1024px) {
-
+    .titleArticles{
+        background-color: #ebebeb;
+        margin:0;
+        color: #666;
+        font-family:Proxima Nova;
+        font-weight: normal;
+    }
+    .titleArticles2{
+        background-color: #ebebeb;
+        margin:0;
+        color: #666;
+        font-family:Proxima Nova;
+        font-weight: normal;
+    }
+    .articulo{
+        position:relative;
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        background-color: white;
+        width: 460px;
+        border-bottom: 15px solid #ebebeb; 
+        margin-right: 15px;
+    }
+    .articuloOferta{
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        background-color: white;
+        width: 460px;
+        border-bottom: 15px solid #ebebeb;
+        flex-wrap: nowrap;
+        margin-right: 15px;
+    }
     header{
+        height: 40vh;
+        background-size:cover;
         box-sizing:content-box;
         background-color: #fff159;
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
         width: 100vw;
-        }
+    }
     .fas-fa-bars{
         display:none;
     }
@@ -181,9 +242,6 @@ ul{
         color:#666;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
-    }
-    article{
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
     }
     .site{
         display: inherit;
@@ -191,20 +249,55 @@ ul{
     .create-login-cart{
         display:inherit;
     }
+    .containerArticles{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        background-color: #ebebeb;
+        margin-bottom:15px;
+    }
+    .containerArticles2{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        background-color: #ebebeb;
+        margin-bottom:15px;
+    }
 
 }
 
 @media (min-width:768px) {
-    .containerArticles article{
-        width:20%;
+
+    .containerArticles{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        background-color: #ebebeb;
+        margin-bottom:15px;
+    }
+    .containerArticles2{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        background-color: #ebebeb;
+        margin-bottom:15px;
     }
     header{
-    box-sizing: content-box;
-    height: 40%;
-    background-color: #fff159;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    width: 100%;
+        background-size:cover;
+        box-sizing: content-box;
+        height: 40%;
+        background-color: #fff159;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        width: 100%;
     }
     .fas-fa-bars{
         display:none;
@@ -213,9 +306,24 @@ ul{
         color:#666;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
+        position:relative;
     }
-    article{
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    .articulo{
+        margin-right: 15px;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        box-shadow: 0 0 10px gray;
+        position:relative;
+    }
+    .articuloOferta{
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        background-color: white;
+        width: 460px;
+        border-bottom: 15px solid #ebebeb;
+        flex-wrap: nowrap;
+        margin-right: 15px;
     }
     .site{
         display: inherit;
@@ -230,8 +338,47 @@ ul{
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
         width: 100%;
-        }
-    article{
-        box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
+    }
+    .containerArticles{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        background-color: #ebebeb;
+        margin-bottom:15px;
+    }
+    .containerArticles2{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        background-color: #ebebeb;
+        margin-bottom:15px;
+    }
+    .articulo{
+        margin-right: 15px;
+        align-items:center;
+        align-content:space-between;
+        justify-content: space-between;
+        box-shadow: 0 0 10px gray;
+        position:relative;
+    }
+    .articuloOferta{
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        background-color: white;
+        width: 460px;
+        border-bottom: 15px solid #ebebeb;
+        flex-wrap: nowrap;
+        margin-right: 15px;
+    }
+    
+    .description {
+        color:#666;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        position:relative;
     }
 }
