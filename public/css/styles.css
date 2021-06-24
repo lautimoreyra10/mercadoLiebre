@@ -194,16 +194,20 @@ ul{
     color:#39b54a;
 }
 @media (min-width:768px) {
-    .containerLogoBarra{
+    .logoContainer img{
+        max-width: 100%;
+    }
+    .containerLogoBarraTitulo{
         width:100%;
         display:flex;
     }
     .logoContainer{
-        width:50%;
+        width:33%;
     }
     .barraBusqueda{
-        width:50%;
+        width:33%;
     }
+
     .caja{
         width:100%;
     }
@@ -314,6 +318,12 @@ ul{
 
 }
 @media (min-width: 361px){
+    .logoContainer img{
+        max-width: 100%;
+    }
+    .iconoBusqueda{
+        display:flex;
+    }
     .caja{
         width:100%;
     }
