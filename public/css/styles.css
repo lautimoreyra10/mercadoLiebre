@@ -1,8 +1,11 @@
 .mainBody{
     background-color: #ebebeb;
 }
+.contenedorImagen img{
+    max-width: 100%;
+}
 header {
-    background-size:contain;
+    background-size:cover;
     background-color: #fff159;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
@@ -27,17 +30,15 @@ h3 {
 .price {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    display:flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    width: 20%;
+    width: 8vw;
 
 }
 .discount {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    display:flex;
     flex-direction: row;
     justify-content:left;
     align-items: center;
@@ -115,27 +116,20 @@ footer{
     margin-left: 20px;
     margin-right: 20px;
     box-shadow: 0 0 10px gray;
+    margin-top:15px;
 }
 .mainBody{
     margin: 0px;
 }
 .containerArticles{
     display:flex;
-    flex-direction:row;
-    align-items:center;
-    align-content:space-between;
-    justify-content: space-between;
-    background-color: #ebebeb;
-    margin-bottom:15px;
+    width: 100vw;
+    flex-wrap: wrap;
 }
 .containerArticles2{
     display:flex;
-    flex-direction:row;
-    align-items:center;
-    align-content:space-between;
-    justify-content: space-between;
-    background-color: #ebebeb;
-    margin-bottom:15px;
+    width:100vw;
+    flex-wrap: wrap;
 }
 .caja{
     border-top: 1px solid #ebebeb;
@@ -149,19 +143,14 @@ footer{
 .articulo{
     text-align: center;
     background-color: white;
-    width: 460px;
-    border-bottom: 15px solid #ebebeb;
-    flex-wrap: nowrap;
     box-shadow: 0 0 10px gray;
 }
 .articuloOferta{
     box-shadow: 0 0 10px gray;
     text-align: center;
     background-color: white;
-    width: 460px;
-    border-bottom: 15px solid #ebebeb;
-    flex-wrap: nowrap;
     margin-right: 15px;
+    width: 94vw;
 }
 .fas.fa-truck{
     color:#39b54a;
@@ -180,7 +169,7 @@ footer{
     background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    left:400px;
+    left:200px;
     bottom: -15px;
 
 }
@@ -194,18 +183,21 @@ ul{
     color:#39b54a;
 }
 @media (min-width:1024px) {
+    .contenedorImagen img{
+        max-width: 100%;
+    }
     .titleArticles{
         background-color: #ebebeb;
         margin:0;
         color: #666;
-        font-family:Proxima Nova;
+        font-family:'Proxima Nova';
         font-weight: normal;
     }
     .titleArticles2{
         background-color: #ebebeb;
         margin:0;
         color: #666;
-        font-family:Proxima Nova;
+        font-family:'Proxima Nova';
         font-weight: normal;
     }
     .articulo{
@@ -213,17 +205,13 @@ ul{
         box-shadow: 0 0 10px gray;
         text-align: center;
         background-color: white;
-        width: 460px;
-        border-bottom: 15px solid #ebebeb; 
         margin-right: 15px;
     }
     .articuloOferta{
         box-shadow: 0 0 10px gray;
         text-align: center;
         background-color: white;
-        width: 460px;
-        border-bottom: 15px solid #ebebeb;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin-right: 15px;
     }
     header{
@@ -235,7 +223,10 @@ ul{
         font-size: 12px;
         width: 100vw;
     }
-    .fas-fa-bars{
+    .fas.fa-bars{
+        display:none;
+    }
+    .burger-menu{
         display:none;
     }
     .description {
@@ -249,46 +240,25 @@ ul{
     .create-login-cart{
         display:inherit;
     }
-    .containerArticles{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        background-color: #ebebeb;
-        margin-bottom:15px;
+    .containerArticles article{
+        width:25%;
     }
-    .containerArticles2{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        background-color: #ebebeb;
-        margin-bottom:15px;
+    .segundoContainerArticles article{
+        width:25%;
     }
 
 }
 
 @media (min-width:768px) {
 
-    .containerArticles{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        background-color: #ebebeb;
-        margin-bottom:15px;
+    .contenedorImagen img{
+        max-width: 100%;
     }
-    .containerArticles2{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        background-color: #ebebeb;
-        margin-bottom:15px;
+    .containerArticles article{
+        width: 25%;
+    }
+    .segundoContainerArticles article{
+        width:25%;
     }
     header{
         background-size:cover;
@@ -299,7 +269,10 @@ ul{
         font-size: 12px;
         width: 100%;
     }
-    .fas-fa-bars{
+    .fas.fa-bars{
+        display:none;
+    }
+    .burger-menu{
         display:none;
     }
     .description {
@@ -315,15 +288,16 @@ ul{
         justify-content: space-between;
         box-shadow: 0 0 10px gray;
         position:relative;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
     }
     .articuloOferta{
         box-shadow: 0 0 10px gray;
         text-align: center;
         background-color: white;
-        width: 460px;
-        border-bottom: 15px solid #ebebeb;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         margin-right: 15px;
+        margin-bottom: 15px;
     }
     .site{
         display: inherit;
@@ -333,29 +307,20 @@ ul{
     }
 }
 @media (min-width: 361px){
+    .contenedorImagen img{
+        max-width: 100%;
+    }
     header{
         background-color: #fff159;
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
         width: 100%;
     }
-    .containerArticles{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        background-color: #ebebeb;
-        margin-bottom:15px;
+    .containerArticles article{
+        width:50%;
     }
-    .containerArticles2{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        background-color: #ebebeb;
-        margin-bottom:15px;
+    .segundoContainerArticles article{
+        width:50%;
     }
     .articulo{
         margin-right: 15px;
@@ -364,17 +329,16 @@ ul{
         justify-content: space-between;
         box-shadow: 0 0 10px gray;
         position:relative;
+        margin-bottom: 15px;
     }
     .articuloOferta{
         box-shadow: 0 0 10px gray;
         text-align: center;
+        justify-content: space-between;
         background-color: white;
-        width: 460px;
-        border-bottom: 15px solid #ebebeb;
-        flex-wrap: nowrap;
         margin-right: 15px;
+        margin-bottom: 15px;
     }
-    
     .description {
         color:#666;
         font-family: 'Roboto', sans-serif;
