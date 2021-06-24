@@ -194,7 +194,21 @@ ul{
     color:#39b54a;
 }
 @media (min-width:768px) {
-
+    .caja{
+        width:100%;
+    }
+    .price{
+        width: 30%;
+    }
+    .discount{
+        width: 70%;
+    }
+    .fas.fa-truck{
+        position: relative;
+        left:315px;
+        bottom: -15px;
+    }
+    
     .contenedorImagen img{
         max-width: 100%;
     }
@@ -248,14 +262,12 @@ ul{
         box-shadow: 0 0 10px gray;
         text-align: center;
         background-color: white;
-        margin-right: 15px;
     }
     .articuloOferta{
         box-shadow: 0 0 10px gray;
         text-align: center;
         background-color: white;
         flex-wrap: wrap;
-        margin-right: 15px;
     }
     header{
         height: 40vh;
@@ -292,6 +304,20 @@ ul{
 
 }
 @media (min-width: 361px){
+    .caja{
+        width:100%;
+    }
+    .price{
+        width: 30%;
+    }
+    .discount{
+        width: 70%;
+    }
+    .fas.fa-truck{
+        position: relative;
+        left:315px;
+        bottom: -15px;
+    }
     .contenedorImagen img{
         max-width: 100%;
     }
@@ -303,9 +329,34 @@ ul{
     }
     .articulo{
         margin-bottom:15px;
+        width:100%;
     }
     .articuloOferta{
-        width:48vw;
+        width:100%;
     }
 
+}
+@media(min-width:1440px){
+    .contenedorImagen img{
+        max-width: 100%;
+    }
+    .articulo{
+        margin-bottom:15px;
+        width:25%;
+    }
+    .articuloOferta{
+        width:25%;
+    }
+    .articulo{
+        position:relative;
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        background-color: white;
+    }
+    .articuloOferta{
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        background-color: white;
+        flex-wrap: wrap;
+    }
 }
