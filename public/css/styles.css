@@ -126,7 +126,7 @@ footer{
     width: 100vw;
     flex-wrap: wrap;
 }
-.containerArticles2{
+.segundoContainerArticles{
     display:flex;
     width:100vw;
     flex-wrap: wrap;
@@ -141,15 +141,12 @@ footer{
     text-align: center;
 }
 .articulo{
-    text-align: center;
     background-color: white;
     box-shadow: 0 0 10px gray;
 }
 .articuloOferta{
     box-shadow: 0 0 10px gray;
-    text-align: center;
     background-color: white;
-    margin-right: 15px;
     width: 94vw;
 }
 .fas.fa-truck{
@@ -158,6 +155,20 @@ footer{
     padding: 0px;
     box-sizing: border-box;
 
+}
+.titleArticles{
+    background-color: #ebebeb;
+    margin:0;
+    color: #666;
+    font-family:'Proxima Nova';
+    font-weight: normal;
+}
+.titleArticles2{
+    background-color: #ebebeb;
+    margin:0;
+    color: #666;
+    font-family:'Proxima Nova';
+    font-weight: normal;
 }
 .fas.fa-truck {
     display: block;
@@ -182,23 +193,55 @@ ul{
 .discount{
     color:#39b54a;
 }
-@media (min-width:1024px) {
+@media (min-width:768px) {
+
     .contenedorImagen img{
         max-width: 100%;
     }
-    .titleArticles{
-        background-color: #ebebeb;
-        margin:0;
-        color: #666;
-        font-family:'Proxima Nova';
-        font-weight: normal;
+    .containerArticles article{
+        width: 50%;
     }
-    .titleArticles2{
-        background-color: #ebebeb;
-        margin:0;
-        color: #666;
-        font-family:'Proxima Nova';
-        font-weight: normal;
+    .segundoContainerArticles article{
+        width:50%;
+    }
+    header{
+        background-size:cover;
+        box-sizing: content-box;
+        height: 40vh;
+        background-color: #fff159;
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        width: 100%;
+    }
+    .fas.fa-bars{
+        display:none;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .description {
+        color:#666;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        position:relative;
+    }
+    .articulo{
+        
+        flex-wrap: wrap;
+    }
+    .articuloOferta{
+        flex-wrap: wrap;
+    }
+    .site{
+        display: inherit;
+     }
+    .create-login-cart{
+        display:inherit;
+    }
+}
+@media (min-width:1024px) {
+    .contenedorImagen img{
+        max-width: 100%;
     }
     .articulo{
         position:relative;
@@ -248,64 +291,6 @@ ul{
     }
 
 }
-
-@media (min-width:768px) {
-
-    .contenedorImagen img{
-        max-width: 100%;
-    }
-    .containerArticles article{
-        width: 25%;
-    }
-    .segundoContainerArticles article{
-        width:25%;
-    }
-    header{
-        background-size:cover;
-        box-sizing: content-box;
-        height: 40%;
-        background-color: #fff159;
-        font-family: 'Roboto', sans-serif;
-        font-size: 12px;
-        width: 100%;
-    }
-    .fas.fa-bars{
-        display:none;
-    }
-    .burger-menu{
-        display:none;
-    }
-    .description {
-        color:#666;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        position:relative;
-    }
-    .articulo{
-        margin-right: 15px;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        box-shadow: 0 0 10px gray;
-        position:relative;
-        margin-bottom: 15px;
-        flex-wrap: wrap;
-    }
-    .articuloOferta{
-        box-shadow: 0 0 10px gray;
-        text-align: center;
-        background-color: white;
-        flex-wrap: wrap;
-        margin-right: 15px;
-        margin-bottom: 15px;
-    }
-    .site{
-        display: inherit;
-     }
-    .create-login-cart{
-        display:inherit;
-    }
-}
 @media (min-width: 361px){
     .contenedorImagen img{
         max-width: 100%;
@@ -316,33 +301,11 @@ ul{
         font-size: 12px;
         width: 100%;
     }
-    .containerArticles article{
-        width:50%;
-    }
-    .segundoContainerArticles article{
-        width:50%;
-    }
     .articulo{
-        margin-right: 15px;
-        align-items:center;
-        align-content:space-between;
-        justify-content: space-between;
-        box-shadow: 0 0 10px gray;
-        position:relative;
-        margin-bottom: 15px;
+        margin-bottom:15px;
     }
     .articuloOferta{
-        box-shadow: 0 0 10px gray;
-        text-align: center;
-        justify-content: space-between;
-        background-color: white;
-        margin-right: 15px;
-        margin-bottom: 15px;
+        width:48vw;
     }
-    .description {
-        color:#666;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        position:relative;
-    }
+
 }
