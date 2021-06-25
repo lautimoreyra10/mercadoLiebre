@@ -53,9 +53,11 @@ h3 {
 }
 .titleArticles{
     color: #666;
+    padding:20px;
 }
 .titleArticles2{
     color: #666;
+    padding:20px;
 }
 
 .burger-menu{
@@ -194,6 +196,26 @@ ul{
     color:#39b54a;
 }
 @media (min-width:768px) {
+    .site li a{
+        padding:20px;
+    }
+    .containerNavBar a{
+        text-decoration:none;
+        color:black;
+    }
+    .containerNavBar{
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        align-content: space-between;
+        align-self: center;
+        align-items: center;
+    }
+    .containerLogCart{
+        text-decoration:none;
+        color:black;
+        display:flex;
+    }
     .logoContainer img{
         max-width: 100%;
     }
@@ -227,15 +249,15 @@ ul{
         max-width: 100%;
     }
     .containerArticles article{
-        width: 50%;
+        width: 42%;
     }
     .segundoContainerArticles article{
-        width:50%;
+        width:42%;
     }
     header{
         background-size:cover;
         box-sizing: content-box;
-        height: 40vh;
+        height: 20vh;
         background-color: #fff159;
         font-family: 'Roboto', sans-serif;
         font-size: 12px;
@@ -254,37 +276,39 @@ ul{
         position:relative;
     }
     .articulo{
-        
         flex-wrap: wrap;
+        margin-right:60px;
     }
     .articuloOferta{
         flex-wrap: wrap;
+        margin-right: 60px;
     }
     .site{
         display: inherit;
      }
     .create-login-cart{
-        display:inherit;
+        display:flex;
+        padding:10px;
+    }
+    .create-login-cart a{
+        padding:15px;
     }
 }
 @media (min-width:1024px) {
+    
     .contenedorImagen img{
         max-width: 100%;
     }
     .articulo{
-        position:relative;
-        box-shadow: 0 0 10px gray;
-        text-align: center;
-        background-color: white;
+        justify-content: center;
+        margin-bottom:15px;
     }
     .articuloOferta{
-        box-shadow: 0 0 10px gray;
-        text-align: center;
-        background-color: white;
-        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom:15px;
     }
     header{
-        height: 40vh;
+        height: 25vh;
         background-size:cover;
         box-sizing:content-box;
         background-color: #fff159;
@@ -304,25 +328,39 @@ ul{
         font-size: 16px;
     }
     .site{
-        display: inherit;
+        display: flex;
     }
     .create-login-cart{
         display:inherit;
+        margin-left:150px;
     }
     .containerArticles article{
-        width:25%;
+        width:20%;
     }
     .segundoContainerArticles article{
-        width:25%;
+        width:20%;
     }
 
 }
 @media (min-width: 361px){
-    .logoContainer img{
-        max-width: 100%;
-    }
-    .iconoBusqueda{
+    .containerLogoBarraTitulo{
         display:flex;
+        padding:20px;
+    }
+    .logoContainer img{
+        max-width: 75%;
+    }
+    .barraBusqueda{
+        width:40%
+    }
+    .barraBusqueda input{
+        width:80%;
+        height: 30px;
+        border-radius: 5px;
+        border:0;
+    }
+    .divBurger{
+        padding: 10px;
     }
     .caja{
         width:100%;
@@ -335,7 +373,7 @@ ul{
     }
     .fas.fa-truck{
         position: relative;
-        left:315px;
+        left:135px;
         bottom: -15px;
     }
     .contenedorImagen img{
@@ -348,10 +386,13 @@ ul{
         width: 100%;
     }
     .articulo{
+        justify-content: center;
         margin-bottom:15px;
         width:100%;
     }
     .articuloOferta{
+        justify-content: center;
+        margin-bottom:15px;
         width:100%;
     }
 
@@ -378,5 +419,15 @@ ul{
         text-align: center;
         background-color: white;
         flex-wrap: wrap;
+    }
+    .create-login-cart{
+        display:inherit;
+        margin-left:300px;
+    }
+    .titleCuotas{
+        width:33%;
+    }
+    .barraBusqueda{
+        width:33%;
     }
 }
