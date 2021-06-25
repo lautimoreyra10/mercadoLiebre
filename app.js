@@ -13,7 +13,7 @@ app.get('/', (req,res)=>{
     res.sendFile(htmlPath);
 });
 
-app.get('/registro', (req,res)=>{
+app.get('/register', (req,res)=>{
     let registerPath = path.resolve(__dirname, './views/register.html');
     res.sendFile(registerPath);
 });
