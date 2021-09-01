@@ -110,7 +110,9 @@ h3 {
     margin:0;
 }
 .bannerimg{
-    width: 100vw;
+    width: 50%;
+    height: 20vh;
+    margin-top: 20px;
 }
 footer{
     text-align: center;
@@ -205,7 +207,6 @@ ul{
     }
     .containerNavBar{
         display:flex;
-        align-items: center;
         flex-direction: row;
         align-content: space-between;
         align-self: center;
@@ -285,7 +286,11 @@ ul{
     }
     .site{
         display: inherit;
+        width:55%;
      }
+    .iconSearchContainer{
+        margin-right: 10px;
+    }
     .create-login-cart{
         display:flex;
         padding:10px;
