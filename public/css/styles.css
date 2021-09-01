@@ -288,9 +288,6 @@ ul{
         display: inherit;
         width:55%;
      }
-    .iconSearchContainer{
-        margin-right: 10px;
-    }
     .create-login-cart{
         display:flex;
         padding:10px;
